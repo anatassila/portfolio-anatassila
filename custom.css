@@ -63,7 +63,9 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow:hidden;
 }
+
 /*--------AJUSTANTO TUDO DA PG PRINCIPAL-Index---------*/
 /*-----------ajustando o header------------*/
 header{
