@@ -269,7 +269,11 @@ footer{
 }
 
 .card{    
-    width: 340px;
+    width:100%; /*apagar*/
+    max-width:340px;
+
+    /*width: 340px; apagar se der certo*/
+    
     background: #111;
     border: 1px solid rgba(138,43,226,.5);
     border-radius: 18px;
