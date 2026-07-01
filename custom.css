@@ -507,6 +507,15 @@ footer{
     .contatos{
         grid-template-columns:1fr;
     }
+    .habilidades{ /*apagar*/
+    width:100%; /*apagar*/
+    padding:0 15px; /*apagar*/
+} /*apagar*/
+
+    .habilidades h1{ /*apagar*/
+    font-size:2.2rem; /*apagar*/
+    margin-bottom:30px; /*apagar*/
+} /*apagar*/
 }
 /*----------------------AJUSTANDO O MODO CLARO E ESCURO-----------------------*/
 #tema{
