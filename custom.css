@@ -1,0 +1,553 @@
+/*----------zerando tudo------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*----------ajustando a logo----------*/
+.logo{
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icone{
+    width:55px;
+    height:55px;
+    border:2px solid rebeccapurple;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:rebeccapurple;
+    font-size:1.7rem;
+    font-weight:bold;
+    box-shadow:0 0 10px rgba(138,43,226,.4);
+}
+
+.logo-texto h2{
+    font-size:1.4rem;
+}
+
+.logo-texto span{
+    color:#bdbdbd;
+    font-size:.95rem;
+}
+
+/*--------------ajustando o body--------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+    radial-gradient(circle at bottom left,rgba(138,43,226,0.6),transparent 40%),
+    radial-gradient(circle at top right,rgba(138,43,226,0.4),transparent 30%),
+    #d9cef5;
+    color: white;
+}
+
+/*------------container principal-------------*/
+.container-principal{
+    width: 90%;
+    max-width: 1400px;
+    height: 80vh;
+    background: #050510;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgb(248, 180, 233);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+/*--------AJUSTANTO TUDO DA PG PRINCIPAL-Index---------*/
+/*-----------ajustando o header------------*/
+header{
+    display: flex; /*elementos na mesma reta-linha*/
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 100%;
+}
+
+/*------------------ajustando a foto ------------------*/
+header img{
+    width:400px;
+    border-radius:50%;
+    animation: aura 6s ease-in-out infinite;
+}
+
+@keyframes aura{
+
+    0%,100%{
+        box-shadow:
+            0 0 20px rgba(138,43,226,.8),
+            0 0 40px rgba(138,43,226,.5),
+            0 0 60px rgba(138,43,226,.3);
+    }
+
+    50%{
+        box-shadow:
+            0 0 120px rgba(138,43,226,.9),
+            0 0 180px rgba(138,43,226,.55),
+            0 0 260px rgba(138,43,226,.18);
+    }
+
+}
+
+/*--------------------ajustando o texto----------------*/
+.texto{
+    max-width: 700px; /*largura da linha para ela quebrar*/
+    text-align: center; /*alinhando no centro*/
+}
+
+.texto h1{
+    font-size: 3rem; /*tamanho*/
+    margin-bottom: 15px; /*margem*/
+}
+
+.texto p{
+    margin-top:20px;
+    margin-bottom:45px;
+    color:#bdbdbd;
+    font-size:1.25rem;
+    line-height:1.8;
+}
+
+/*------------ajustando os botões---------------*/
+.editando-botoes{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.editando-botoes a{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px;
+    text-decoration: none;
+    color: white;
+    background: #111;
+    border: 1px solid rgba(138,43,226,.5);
+    border-radius: 18px;
+    transition: .35s;
+}
+
+.editando-botoes a:hover{
+    transform: translateY(-5px);
+    border-color: rebeccapurple;
+    box-shadow:
+    0 0 20px rgba(138,43,226,.4);
+}
+
+.icone{
+    width:55px;
+    height:55px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:14px;
+    background:rebeccapurple;
+    font-size:1.5rem;
+    flex-shrink:0;
+}
+
+.editando-botoes h3{
+    margin-bottom:8px;
+    font-size:1.1rem;
+}
+
+.editando-botoes p{
+    margin:0;
+    font-size:.9rem;
+    color:#bdbdbd;
+    line-height:1.4;
+}
+
+/*--------------centralizando o main------------------*/
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-----------------editando o menu-----------------*/
+.menu{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+} 
+
+#botao-menu{
+    background-color: rebeccapurple;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rebeccapurple;
+}
+
+#lista-menu{
+    display: none;
+    list-style: none;
+    margin-top: 10px;
+    background-color: #111;
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#lista-menu.ativo{
+    display: block;
+}
+
+#lista-menu li a{
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#lista-menu li a:hover{
+    background-color: rebeccapurple;
+}
+
+/*------------ajustando o footer----------*/
+footer{
+    padding: 20px 30px;
+    font-size: 0.9rem;
+    color: whitesmoke;
+}
+/*-------------------FIM DA PG PRINCIPAL-Index-------------------------*/
+
+/*--------------------INICIO SOBRE MIM---------------------------*/
+
+/*ajustando o texto*/
+.texto-sobre-mim h1{
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+.texto-sobre-mim p{
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 750px; 
+    margin: 0 auto; 
+    color: whitesmoke;
+    text-align: left;
+}
+
+/*-----------------------FIM SOBRE MIM---------------------------*/
+
+/*-------------------INICIO HABILIDADES--------------------------*/
+.habilidades{
+    width: 100%;
+}
+.habilidades h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-shadow:
+        0 0 10px rebeccapurple,
+        0 0 20px rebeccapurple;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{    
+    width: 340px;
+    background: #111;
+    border: 1px solid rgba(138,43,226,.5);
+    border-radius: 18px;
+    padding: 25px;
+    transition: .3s;
+}
+
+.card h2{
+    color: rebeccapurple;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.card h3{
+    margin-top:20px;
+    margin-bottom:10px;
+    color:white;
+}
+
+.card p{
+    color:#d8d8d8;
+    margin-bottom:8px;
+    line-height:1.6;
+}
+
+.card ul{
+
+    margin-left:20px;
+}
+
+     .card li{
+    margin-bottom:8px;
+    color:#d8d8d8;
+} 
+/*---------------------FIM HABILIDADES--------------------------*/
+
+/*---------------------INICIO CONTATO--------------------------*/
+
+.pagina-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.texto-contato{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.texto-contato h1{
+    font-size:3rem;
+    margin-bottom:20px;
+    text-shadow:
+        0 0 10px rebeccapurple,
+        0 0 20px rebeccapurple;
+}
+
+.texto-contato p{
+    color:#bdbdbd;
+    font-size:1.15rem;
+    margin-bottom:50px;
+    line-height:1.7;
+}
+
+.contatos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.contato-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:25px;
+    background:#111;
+    border:1px solid rgba(138,43,226,.5);
+    border-radius:18px;
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+.contato-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(138,43,226,.4);
+    border-color:rebeccapurple;
+}
+
+.contato-card span{
+    width:60px;
+    height:60px;
+    border-radius:15px;
+    background:rebeccapurple;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.6rem;
+    flex-shrink:0;
+}
+
+.contato-card h3{
+    margin-bottom:6px;
+}
+
+.contato-card p{
+    color:#bdbdbd;
+}
+/*-------------------------FIM CONTATO--------------------------*/
+
+/*--------------------FORMULÁRIO DE CONTATO---------------------*/
+.pagina-formulario{
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.pagina-formulario h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow:
+        0 0 10px rebeccapurple,
+        0 0 20px rebeccapurple;
+}
+
+.pagina-formulario p{
+    color: #bdbdbd;
+    font-size: 1.1rem;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+#formulario input,
+#formulario textarea{
+    width: 100%;
+    padding: 15px 18px;
+    background: #111;
+    color: white;
+    border: 1px solid rgba(138,43,226,.5);
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: .3s;
+}
+
+#formulario input:focus,
+#formulario textarea:focus{
+    border-color: rebeccapurple;
+    box-shadow: 0 0 10px rgba(138,43,226,.5);
+}
+
+#formulario textarea{
+    resize: none;
+    min-height: 150px;
+}
+
+#formulario button{
+    width: 220px;
+    margin: 10px auto 0;
+    padding: 15px;
+    background: rebeccapurple;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#formulario button:hover{
+    transform: translateY(-4px);
+    box-shadow:
+        0 0 10px rebeccapurple,
+        0 0 20px rebeccapurple;
+}
+
+#formulario{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/*------------------------RESPONSIVIDADE------------------------*/
+@media (max-width: 900px){
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+    header img{
+        width:250px;
+    }
+    .editando-botoes{
+        flex-direction:column;
+        align-items:center;
+    }
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+    .contato{
+        grid-template-columns:1fr;
+    }
+    .container-principal{
+        height:auto;
+        min-height:90vh;
+    }
+}
+
+/*----------------------AJUSTANDO O MODO CLARO E ESCURO-----------------------*/
+#tema{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:rebeccapurple;
+    color:white;
+    font-size:22px;
+    box-shadow:0 0 15px rgba(138,43,226,.5);
+    transition:.3s;
+}
+#tema:hover{
+    transform:scale(1.1);
+}
+
+/*FAZENDO A TRANZIÇÃO*/
+body{
+    transition:.4s;
+}
+
+.container-principal,
+.card,
+.contato-card,
+.editando-botoes a,
+#formulario input,
+#formulario textarea,
+#lista-menu{
+    transition:.4s;
+}
+
+body.tema-claro{
+    background:rgb(245, 230, 255);
+    color:#222;
+}
+
+body.tema-claro .container-principal{
+    background:rgb(248, 240, 253);
+    color:#222;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+body.tema-claro .texto p,
+body.tema-claro .texto-sobre-mim p,
+body.tema-claro .texto-contato p,
+body.tema-claro .card p,
+body.tema-claro .card li,
+body.tema-claro .contato-card p,
+body.tema-claro footer{
+    color:#303030;
+}
+
+body.tema-claro .card,
+body.tema-claro .contato-card,
+body.tema-claro .editando-botoes a,
+body.tema-claro #lista-menu,
+body.tema-claro #formulario input,
+body.tema-claro #formulario textarea{
+    background:#d882e9;
+    color:#222;
+    border:1px solid #c8b6ff;
+}
+
+body.tema-claro #formulario input::placeholder,
+body.tema-claro #formulario textarea::placeholder{
+    color:#777;
+}
