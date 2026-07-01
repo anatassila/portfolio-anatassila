@@ -456,7 +456,7 @@ footer{
 }
 
 /*------------------------RESPONSIVIDADE------------------------*/
-@media (max-width: 900px){
+/*@media (max-width: 900px){
     header{
         flex-direction: column;
         text-align: center;
@@ -478,6 +478,58 @@ footer{
     .container-principal{
         height:auto;
         min-height:90vh;
+    }
+}*/
+@media (max-width: 900px){
+
+    .container-principal{
+        height:auto;
+        min-height:100vh;
+        padding-top:120px; /* NOVO */
+    }
+
+    .logo{
+        top:15px; /* ALTERADO */
+        left:15px; /* ALTERADO */
+        transform:scale(0.8); /* NOVO */
+        transform-origin:top left; /* NOVO */
+    }
+
+    .menu{
+        top:15px; /* ALTERADO */
+        right:15px; /* ALTERADO */
+    }
+
+    header{
+        flex-direction:column;
+        text-align:center;
+        gap:30px; /* NOVO */
+    }
+
+    header img{
+        width:250px;
+    }
+
+    .texto h1{
+        font-size:2.3rem; /* NOVO */
+    }
+
+    .texto p{
+        font-size:1rem; /* NOVO */
+    }
+
+    .editando-botoes{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .contatos{
+        grid-template-columns:1fr;
     }
 }
 
