@@ -269,11 +269,8 @@ footer{
 }
 
 .card{    
-    width:100%; /*apagar*/
-    max-width:340px;
-
-    /*width: 340px; apagar se der certo*/
-    
+    width:100%;
+    max-width:340px; 
     background: #111;
     border: 1px solid rgba(138,43,226,.5);
     border-radius: 18px;
@@ -511,15 +508,12 @@ footer{
     .contatos{
         grid-template-columns:1fr;
     }
-    .habilidades{ /*apagar*/
-    width:100%; /*apagar*/
-    padding:0 15px; /*apagar*/
-} /*apagar*/
-
-    .habilidades h1{ /*apagar*/
-    font-size:2.2rem; /*apagar*/
-    margin-bottom:30px; /*apagar*/
-} /*apagar*/
+    .container-principal{
+        width:100%;
+        border-radius:0;
+        margin:0;
+        padding:120px 15px 20px;
+    }
 }
 /*----------------------AJUSTANDO O MODO CLARO E ESCURO-----------------------*/
 #tema{
