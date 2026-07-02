@@ -24,8 +24,8 @@ if (formulario) {
 }
 // ----------------------------FIM FORMULÁRIO----------------------------
 
-// --------------------------- EFEITO JQUERY ----------------------------
-// -----------ABRINDO A PG
+// --------------------------------JQUERY--------------------------------
+// -----------ABRINDO A PG--------------
 $(function () {
     $(".container-principal")
         .css({
@@ -33,26 +33,10 @@ $(function () {
         })
         .animate({
             opacity: 1
-        }, 6500);
+        }, 8500);
 });
-// -------FOTO AUMENTA QUANDO PASSA O MOUSE
-$(function () {
 
-    $("header img").hover(
-        function () {
-            $(this).stop().animate({
-                width: "320px"
-            }, 300);
-        },
-        function () {
-            $(this).stop().animate({
-                width: "300px"
-            }, 300);
-        }
-    );
-
-});
-// ----------BOTÕES AUMENTAM QUANDO PASSA O MOUSE
+// -------BOTÕES AUMENTAM QUANDO PASSA O MOUSE-
 $(function () {
 
     $(".editando-botoes a").hover(
@@ -69,7 +53,7 @@ $(function () {
     );
 
 });
-// ------------------------- FIM EFEITO JQUERY --------------------------
+// ---------------------------------JQUERY-------------------------------
 
 // ----------------------------CLARO E ESCURO----------------------------
 
