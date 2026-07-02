@@ -6,7 +6,7 @@ const menu = document.getElementById("lista-menu");botao.addEventListener("click
 });
 // -------------------------------FIM MENU------------------------------
 
-// ------------------------------FORMULÁRIO------------------------------
+// ------------------------------FORMULÁRIO-----------------------------
 const formulario = document.getElementById("formulario");
 if (formulario) {
     formulario.addEventListener("submit", function(event) {
@@ -34,34 +34,22 @@ $(function () {
         .animate({
             opacity: 1
         }, 3000);
-    // Botões aumentam quando passa o mouse
-//     $(".editando-botoes a").hover(
-//         function () {
-//             $(this).stop().animate({
-//                 paddingLeft: "35px"
-//             }, 200);
-//         },
-//         function () {
-//             $(this).stop().animate({
-//                 paddingLeft: "20px"
-//             }, 200);
-//         }
-//     );
-
-// });
-    $(".editando-botoes a").click(function () {
-
-        $(this)
-            .animate({
-                marginTop: "-10px"
-            }, 120)
-            .animate({
-                marginTop: "0px"
-            }, 120);
-
-    });
+    Botões aumentam quando passa o mouse
+    $(".editando-botoes a").hover(
+        function () {
+            $(this).stop().animate({
+                paddingLeft: "35px"
+            }, 200);
+        },
+        function () {
+            $(this).stop().animate({
+                paddingLeft: "20px"
+            }, 200);
+        }
+    );
 
 });
+
 // ---------------------------------JQUERY-------------------------------
 
 // ----------------------------CLARO E ESCURO----------------------------
