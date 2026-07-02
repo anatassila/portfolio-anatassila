@@ -43,7 +43,7 @@ $(function () {
         },
         function () {
             $(this).stop().animate({
-                paddingLeft: "80px"
+                paddingLeft: "10px"
             }, 200);
         }
     );
