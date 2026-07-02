@@ -26,7 +26,7 @@ if (formulario) {
 
 // --------------------------------JQUERY--------------------------------
 $(function () {
-    // Abrindo a página
+// Abrindo a página
     $(".container-principal")
         .css({
             opacity: 0
@@ -34,7 +34,7 @@ $(function () {
         .animate({
             opacity: 1
         }, 3000);
-    Botões aumentam quando passa o mouse
+// Botões aumentam quando passa o mouse
     $(".editando-botoes a").hover(
         function () {
             $(this).stop().animate({
