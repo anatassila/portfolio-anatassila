@@ -25,32 +25,41 @@ if (formulario) {
 // ----------------------------FIM FORMULÁRIO----------------------------
 
 // --------------------------------JQUERY--------------------------------
-// -----------ABRINDO A PG--------------
 $(function () {
+    // Abrindo a página
     $(".container-principal")
         .css({
             opacity: 0
         })
         .animate({
             opacity: 1
-        }, 8500);
-});
+        }, 3000);
+    // Botões aumentam quando passa o mouse
+//     $(".editando-botoes a").hover(
+//         function () {
+//             $(this).stop().animate({
+//                 paddingLeft: "35px"
+//             }, 200);
+//         },
+//         function () {
+//             $(this).stop().animate({
+//                 paddingLeft: "20px"
+//             }, 200);
+//         }
+//     );
 
-// -------BOTÕES AUMENTAM QUANDO PASSA O MOUSE-
-$(function () {
+// });
+    $(".editando-botoes a").click(function () {
 
-    $(".editando-botoes a").hover(
-        function () {
-            $(this).stop().animate({
-                paddingLeft: "35px"
-            }, 200);
-        },
-        function () {
-            $(this).stop().animate({
-                paddingLeft: "20px"
-            }, 200);
-        }
-    );
+        $(this)
+            .animate({
+                marginTop: "-10px"
+            }, 120)
+            .animate({
+                marginTop: "0px"
+            }, 120);
+
+    });
 
 });
 // ---------------------------------JQUERY-------------------------------
