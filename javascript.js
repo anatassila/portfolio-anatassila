@@ -35,11 +35,39 @@ $(function () {
             opacity: 1
         }, 6500);
 });
-// -------RODANDO O BOTÃO CLARO/ESCURO QUANDO CLICA
-$("#tema").click(function () {
-    $(this)
-        .css("transform", "rotate(360deg)")
-        .css("transition", "0.5s");
+// -------FOTO AUMENTA QUANDO PASSA O MOUSE
+$(function () {
+
+    $("header img").hover(
+        function () {
+            $(this).stop().animate({
+                width: "320px"
+            }, 300);
+        },
+        function () {
+            $(this).stop().animate({
+                width: "300px"
+            }, 300);
+        }
+    );
+
+});
+// ----------BOTÕES AUMENTAM QUANDO PASSA O MOUSE
+$(function () {
+
+    $(".editando-botoes a").hover(
+        function () {
+            $(this).stop().animate({
+                paddingLeft: "35px"
+            }, 200);
+        },
+        function () {
+            $(this).stop().animate({
+                paddingLeft: "20px"
+            }, 200);
+        }
+    );
+
 });
 // ------------------------- FIM EFEITO JQUERY --------------------------
 
