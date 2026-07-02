@@ -26,7 +26,7 @@ if (formulario) {
 
 // --------------------------- EFEITO JQUERY ----------------------------
 $(function () {
-    $(".texto").css("display", "none").fadeIn(1500);
+    $(".texto").hide().delay(1000).fadeIn(3000);
 });
 // ------------------------- FIM EFEITO JQUERY --------------------------
 
