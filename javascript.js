@@ -24,6 +24,12 @@ if (formulario) {
 }
 // ----------------------------FIM FORMULÁRIO----------------------------
 
+// --------------------------- EFEITO JQUERY ----------------------------
+$(document).ready(function () {
+    $("main").hide().fadeIn(1000);
+});
+// ------------------------- FIM EFEITO JQUERY --------------------------
+
 // ----------------------------CLARO E ESCURO----------------------------
 
 const tema = document.getElementById("tema");
