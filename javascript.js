@@ -25,6 +25,7 @@ if (formulario) {
 // ----------------------------FIM FORMULÁRIO----------------------------
 
 // --------------------------- EFEITO JQUERY ----------------------------
+// -----------ABRINDO A PG
 $(function () {
     $(".container-principal")
         .css({
@@ -33,6 +34,12 @@ $(function () {
         .animate({
             opacity: 1
         }, 6500);
+});
+// -------RODANDO O BOTÃO CLARO/ESCURO QUANDO CLICA
+$("#tema").click(function () {
+    $(this)
+        .css("transform", "rotate(360deg)")
+        .css("transition", "0.5s");
 });
 // ------------------------- FIM EFEITO JQUERY --------------------------
 
