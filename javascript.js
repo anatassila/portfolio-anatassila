@@ -38,12 +38,12 @@ $(function () {
     $(".editando-botoes a").hover(
         function () {
             $(this).stop().animate({
-                paddingLeft: "35px"
+                paddingLeft: "30px"
             }, 200);
         },
         function () {
             $(this).stop().animate({
-                paddingLeft: "20px"
+                paddingLeft: "15px"
             }, 200);
         }
     );
