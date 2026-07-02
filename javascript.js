@@ -25,8 +25,8 @@ if (formulario) {
 // ----------------------------FIM FORMULÁRIO----------------------------
 
 // --------------------------- EFEITO JQUERY ----------------------------
-$(document).ready(function () {
-    $("main").hide().fadeIn(1000);
+$(function () {
+    $(".texto").css("display", "none").fadeIn(1500);
 });
 // ------------------------- FIM EFEITO JQUERY --------------------------
 
