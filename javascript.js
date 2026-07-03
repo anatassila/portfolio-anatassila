@@ -41,13 +41,13 @@ $(function () {
     $(".editando-botoes a").hover(
         function () {
             $(this).stop().animate({
-                paddingLeft: "35px"
-            }, 200);
+                marginLeft: "10px"
+            }, 300);
         },
         function () {
             $(this).stop().animate({
-                paddingLeft: "20px"
-            }, 200);
+                marginLeft: "0px"
+            }, 300);
         }
     );
 });
