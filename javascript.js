@@ -36,23 +36,21 @@ if (formulario) {
 //         }, 3500);
 // });
 
-// // ----------BOTÕES AUMENTAM QUANDO PASSA O MOUSE
-// $(function () {
-
-//     $(".editando-botoes a").hover(
-//         function () {
-//             $(this).stop().animate({
-//                 paddingLeft: "35px"
-//             }, 200);
-//         },
-//         function () {
-//             $(this).stop().animate({
-//                 paddingLeft: "20px"
-//             }, 200);
-//         }
-//     );
-
-// });
+// ----------BOTÕES AUMENTAM QUANDO PASSA O MOUSE
+$(function () {
+    $(".editando-botoes a").hover(
+        function () {
+            $(this).stop().animate({
+                paddingLeft: "35px"
+            }, 200);
+        },
+        function () {
+            $(this).stop().animate({
+                paddingLeft: "20px"
+            }, 200);
+        }
+    );
+});
 // // ------------------------- FIM EFEITO JQUERY --------------------------
 
 // ----------------------------CLARO E ESCURO----------------------------
