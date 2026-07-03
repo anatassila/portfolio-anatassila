@@ -35,16 +35,33 @@ $(function () {
             opacity: 1
         }, 3000);
 // Botões aumentam quando passa o mouse
+//     $(".editando-botoes a").hover(
+//         function () {
+//             $(this).stop().animate({
+//                 paddingLeft: "35px"
+//             }, 200);
+//         },
+//         function () {
+//             $(this).stop().animate({
+//                 paddingLeft: "20px"
+//             }, 200);
+//         }
+//     );
+
+// });
+
+$(function () {
+
     $(".editando-botoes a").hover(
         function () {
             $(this).stop().animate({
-                paddingLeft: "30px"
-            }, 200);
+                marginLeft: "10px"
+            }, 300);
         },
         function () {
             $(this).stop().animate({
-                paddingLeft: "10px"
-            }, 200);
+                marginLeft: "0px"
+            }, 300);
         }
     );
 
