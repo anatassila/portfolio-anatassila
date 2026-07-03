@@ -1,12 +1,12 @@
 // --------------------------------MENU---------------------------------
 const botao = document.getElementById("botao-menu");
-const menu = document.getElementById("lista-menu");
-botao.addEventListener("click", () => {
+const menu = document.getElementById("lista-menu");botao.addEventListener("click", () => 
+    {
     menu.classList.toggle("ativo");
 });
 // -------------------------------FIM MENU------------------------------
 
-// ------------------------------FORMULÁRIO-----------------------------
+// ------------------------------FORMULÁRIO------------------------------
 const formulario = document.getElementById("formulario");
 if (formulario) {
     formulario.addEventListener("submit", function(event) {
@@ -24,32 +24,36 @@ if (formulario) {
 }
 // ----------------------------FIM FORMULÁRIO----------------------------
 
-// --------------------------------JQUERY--------------------------------
+// --------------------------- EFEITO JQUERY ----------------------------
+// -----------ABRINDO A PG
 $(function () {
-// Abrindo a página
     $(".container-principal")
         .css({
             opacity: 0
         })
         .animate({
             opacity: 1
-        }, 3000);
-// Botões aumentam quando passa o mouse
+        }, 3500);
+});
+
+// ----------BOTÕES AUMENTAM QUANDO PASSA O MOUSE
+$(function () {
+
     $(".editando-botoes a").hover(
         function () {
             $(this).stop().animate({
-                marginLeft: "10px"
-            }, 300);
+                paddingLeft: "35px"
+            }, 200);
         },
         function () {
             $(this).stop().animate({
-                marginLeft: "0px"
-            }, 300);
+                paddingLeft: "20px"
+            }, 200);
         }
     );
-});
 
-// ---------------------------------JQUERY-------------------------------
+});
+// ------------------------- FIM EFEITO JQUERY --------------------------
 
 // ----------------------------CLARO E ESCURO----------------------------
 
