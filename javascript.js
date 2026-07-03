@@ -1,7 +1,7 @@
 // --------------------------------MENU---------------------------------
 const botao = document.getElementById("botao-menu");
-const menu = document.getElementById("lista-menu");botao.addEventListener("click", () => 
-    {
+const menu = document.getElementById("lista-menu");
+botao.addEventListener("click", () => {
     menu.classList.toggle("ativo");
 });
 // -------------------------------FIM MENU------------------------------
@@ -24,36 +24,36 @@ if (formulario) {
 }
 // ----------------------------FIM FORMULÁRIO----------------------------
 
-// --------------------------- EFEITO JQUERY ----------------------------
-// -----------ABRINDO A PG
-$(function () {
-    $(".container-principal")
-        .css({
-            opacity: 0
-        })
-        .animate({
-            opacity: 1
-        }, 3500);
-});
+// // --------------------------- EFEITO JQUERY ----------------------------
+// // -----------ABRINDO A PG
+// $(function () {
+//     $(".container-principal")
+//         .css({
+//             opacity: 0
+//         })
+//         .animate({
+//             opacity: 1
+//         }, 3500);
+// });
 
-// ----------BOTÕES AUMENTAM QUANDO PASSA O MOUSE
-$(function () {
+// // ----------BOTÕES AUMENTAM QUANDO PASSA O MOUSE
+// $(function () {
 
-    $(".editando-botoes a").hover(
-        function () {
-            $(this).stop().animate({
-                paddingLeft: "35px"
-            }, 200);
-        },
-        function () {
-            $(this).stop().animate({
-                paddingLeft: "20px"
-            }, 200);
-        }
-    );
+//     $(".editando-botoes a").hover(
+//         function () {
+//             $(this).stop().animate({
+//                 paddingLeft: "35px"
+//             }, 200);
+//         },
+//         function () {
+//             $(this).stop().animate({
+//                 paddingLeft: "20px"
+//             }, 200);
+//         }
+//     );
 
-});
-// ------------------------- FIM EFEITO JQUERY --------------------------
+// });
+// // ------------------------- FIM EFEITO JQUERY --------------------------
 
 // ----------------------------CLARO E ESCURO----------------------------
 
