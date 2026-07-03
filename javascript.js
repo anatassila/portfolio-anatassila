@@ -1,7 +1,7 @@
 // --------------------------------MENU---------------------------------
 const botao = document.getElementById("botao-menu");
-const menu = document.getElementById("lista-menu");botao.addEventListener("click", () => 
-    {
+const menu = document.getElementById("lista-menu");
+botao.addEventListener("click", () => {
     menu.classList.toggle("ativo");
 });
 // -------------------------------FIM MENU------------------------------
@@ -35,23 +35,6 @@ $(function () {
             opacity: 1
         }, 3000);
 // Botões aumentam quando passa o mouse
-//     $(".editando-botoes a").hover(
-//         function () {
-//             $(this).stop().animate({
-//                 paddingLeft: "35px"
-//             }, 200);
-//         },
-//         function () {
-//             $(this).stop().animate({
-//                 paddingLeft: "20px"
-//             }, 200);
-//         }
-//     );
-
-// });
-
-$(function () {
-
     $(".editando-botoes a").hover(
         function () {
             $(this).stop().animate({
@@ -64,7 +47,6 @@ $(function () {
             }, 300);
         }
     );
-
 });
 
 // ---------------------------------JQUERY-------------------------------
