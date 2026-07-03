@@ -24,17 +24,17 @@ if (formulario) {
 }
 // ----------------------------FIM FORMULÁRIO----------------------------
 
-// // --------------------------- EFEITO JQUERY ----------------------------
-// // -----------ABRINDO A PG
-// $(function () {
-//     $(".container-principal")
-//         .css({
-//             opacity: 0
-//         })
-//         .animate({
-//             opacity: 1
-//         }, 3500);
-// });
+// --------------------------- EFEITO JQUERY ----------------------------
+// -----------ABRINDO A PG
+$(function () {
+    $(".container-principal")
+        .css({
+            opacity: 0
+        })
+        .animate({
+            opacity: 1
+        }, 3500);
+});
 
 // ----------BOTÕES AUMENTAM QUANDO PASSA O MOUSE
 $(function () {
